@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="load()" onclick="programar_Cerrar()">
+	<script >
+		var timerCerrar;
+		
+		function programar_Cerrar() {
+			clearTimeout(timerCerrar);
+			timerCerrar=setTimeout("window.close()",10000)
+		}
+
+		function load(){
+			setInterval('is_ond_line()',1000);
+			programar_Cerrar();
+
+		}
+
+		function is_on_line(){
+			if (!window.navigator.online)
+				window.document.bgColor="red";
+				else
+				window.document.bgColor="white"; 
+		}
+		function cerrar() {
+			setTimeout(window.close,5000)
+		}
+	</script>
+
+</body>
+</html>

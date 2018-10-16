@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="mostrar()">
+	<a href="#" onclick="window.print()">imprimir</a>
+	<script >
+		function mostrar() {
+		
+		alert(window.navigator.appName+"\n"+
+			window.navigator.language+"\n"+
+			window.navigator.userAgent+"\n"+
+			window.navigator.onLine);
+		alert("ancho "+window.screen.width+
+			". alto ; "+window.screen.height+
+			". ancho disponible "+window.screen.availWidth+
+			". el alto disponible "+
+			window.screen.availHeight);
+	}
+	</script>
+
+</body>
+</html>
